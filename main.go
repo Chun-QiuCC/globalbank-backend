@@ -21,7 +21,7 @@ func main() {
 	if err := db.InitMySQL(); err != nil {
 		log.Fatalf("初始化 MySQL 失败：%v", err)
 	}
-	log.Println("MySQL 初始化成功（符合文档“统一数据库管理”需求 🔶1-25）")
+	log.Println("MySQL 初始化成功")
 
 	// 3. 最后执行业务初始化（如创建测试账户，依赖 db，符合“service 依赖 db”，🔶1-6） // **移除默认生成初始测试账户**
 	// if err := service.CreateTestAccount(); err != nil {
