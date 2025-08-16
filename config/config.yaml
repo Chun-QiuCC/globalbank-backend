@@ -1,7 +1,0 @@
-mysql:
-  user: root
-  password: 147258qwe!  # 例：password: 123456
-  addr: 127.0.0.1:3306
-  dbname: globalbank
-server:
-  port: "8080"  # 后端服务端口，默认8080
