@@ -36,6 +36,11 @@ func main() {
 	api.RegisterWebAPI(apiGroup)
 	api.RegisterSpigotAPI(apiGroup)
 
+	// 嘻嘻
+	r.GET("/teapot", func(c *gin.Context) {
+		c.String(418, "418 I'm a teapot")
+	})
+
 	port := config.GetServerConfig().Port
 	log.Printf("后端服务启动：http://localhost:%s", port)
 	log.Fatal(r.Run(":" + port))
