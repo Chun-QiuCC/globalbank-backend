@@ -1,6 +1,6 @@
 mysql:
   user: root
-  password: <你的密码>  # 例：password: 123456
+  password: 147258qwe!  # 例：password: 123456
   addr: 127.0.0.1:3306
   dbname: globalbank
 server:

@@ -32,11 +32,11 @@ func main() {
 
 	// 后续初始化 API、启动服务...（均符合文档“核心后端调度各模块” 🔶1-6）
 	r := gin.Default()
-	apiGroup := r.Group("/api/v1")
+	apiGroup := r.Group("/api")
 	api.RegisterWebAPI(apiGroup)
 	api.RegisterSpigotAPI(apiGroup)
 
 	port := config.GetServerConfig().Port
-	log.Printf("后端服务启动：http://localhost:%s（符合文档“核心后端为技术中枢” 🔶1-6）", port)
+	log.Printf("后端服务启动：http://localhost:%s", port)
 	log.Fatal(r.Run(":" + port))
 }
